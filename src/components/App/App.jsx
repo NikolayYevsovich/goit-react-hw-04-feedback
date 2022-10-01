@@ -13,13 +13,13 @@ export default function App() {
   const handleVote = voteName => {
     switch (voteName) {
       case 'good':
-        setGood(good + 1);
+        setGood(good => good + 1);
         break;
       case 'neutral':
-        setNeutral(neutral + 1);
+        setNeutral(neutral => neutral + 1);
         break;
       case 'bad':
-        setBad(bad + 1);
+        setBad(bad => bad + 1);
         break;
 
       default:
